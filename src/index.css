@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: block;
+  max-width: 50rem;
+  margin: auto;
+  border: 2px solid;
+}
+
+.app {
+  width: 100%;
+  border: 2px solid;
+}
+
+header {
+  background-color: gray;
+}
+
+.password_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-color: aquamarine;
+  padding: 1em;
+  border-radius: 5px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.password {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.password div {
+  display: flex;
+  gap: 1em;
+  width: fit-content;
+}
+
+.password p {
+  border: 2px solid;
+  padding: 0.25em;
+}
+
+footer {
+  background-color: gray;
+}
+
+header, footer, form, .password  {
+padding: 1em;
+}
