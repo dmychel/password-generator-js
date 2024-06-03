@@ -7,19 +7,28 @@ body {
   display: block;
   max-width: 50rem;
   margin: auto;
-  border: 2px solid;
+  background-color:  #171a21 ;
 }
 
 .app {
   width: 100%;
-  border: 2px solid;
+  height: 100vh;
+  color:#c7d5e0 
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 header {
-  background-color: gray;
+  background-color: #1b2838 ;
 }
 
 .password_form {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,8 +38,8 @@ form {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
-  background-color: aquamarine;
+  width: 80%;
+  background-color: #2a475e ;
   padding: 1em;
   border-radius: 5px;
 }
@@ -43,7 +52,6 @@ form div {
 .password {
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .password div {
@@ -52,15 +60,25 @@ form div {
   width: fit-content;
 }
 
-.password p {
-  border: 2px solid;
-  padding: 0.25em;
+footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1b2838 ;
 }
 
-footer {
-  background-color: gray;
+a {
+  color: #66c0f4 ;
 }
 
 header, footer, form, .password  {
 padding: 1em;
+}
+
+@media screen and (max-width: 505px) {
+  form {
+    font-size: 1.5rem;
+    width: fit-content;
+    flex-direction: column;
+    gap: 1em;
+  }
 }
