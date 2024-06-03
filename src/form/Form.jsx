@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 export default function Form({ setFormObject }) {
   const [min, setMin] = useState(6);
   const [max, setMax] = useState(10);
-  const [special, setSpecial] = useState(true);
-  const [number, setNumber] = useState(true);
+  const [special, setSpecial] = useState(false);
+  const [number, setNumber] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
