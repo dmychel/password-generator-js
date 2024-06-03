@@ -60,7 +60,7 @@ function specialPassword(length){
 function insecurePassword(length){
     let array = []
     for(let i = 0; i < length; i++){
-        const randomCharacter = alphabet[Math.floor(Math.random() * length)]
+        const randomCharacter = alphabet[Math.floor(Math.random() * alphabet.length)]
         array.push(randomCharacter)
     }
     const password = array.join('')
