@@ -1,14 +1,22 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
-export default function Form() {
+export default function Form({ setFormObject }) {
   const [min, setMin] = useState(6);
   const [max, setMax] = useState(10);
   const [special, setSpecial] = useState(true);
   const [number, setNumber] = useState(true);
+
   function handleSubmit(e) {
     e.preventDefault();
-    console.log(min, max, special, number);
+    setFormObject({
+      min: min,
+      max: max,
+      special: special,
+      number: number,
+    });
   }
+
   return (
     <section className="password_form">
       <form onSubmit={handleSubmit}>
@@ -71,3 +79,7 @@ export default function Form() {
     </section>
   );
 }
+
+Form.propTypes = {
+  setFormObject: PropTypes.func,
+};
