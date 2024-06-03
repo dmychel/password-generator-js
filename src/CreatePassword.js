@@ -22,7 +22,6 @@ function parsePassword(special, number, length){
     else {return}
 }
 
-
 function securePassword(length){
     let array = []
     for(let i = 0; i < length; i++){
